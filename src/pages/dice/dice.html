@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dice</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Menu Starter</h3>
+  <ion-item>
+    <ion-label>Results</ion-label>
+    <ion-textarea [(ngModel)]="log" rows="10"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <button ion-button color="primary" (tap)="roll()">Roll</button>
+  </ion-item>
+</ion-content>
